@@ -242,6 +242,7 @@ class FasterImage
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $this->timeout);
         curl_setopt($ch, CURLOPT_TIMEOUT, $this->timeout);
+        curl_setopt($ch, CURLOPT_VERBOSE, true);
 
         #  Some web servers require the useragent to be not a bot. So we are liars.
         curl_setopt($ch, CURLOPT_USERAGENT, $this->userAgent);
